@@ -1,0 +1,37 @@
+.gradle
+.idea
+lib
+out
+dist
+.DS_Store
+build
+node_modules
+*.iml
+classes
+scale-web/dist
+importdata/output
+importdata/*.html
+
+*.log
+
+# Created by https://www.gitignore.io/api/visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
+
+
+# End of https://www.gitignore.io/api/visualstudiocode
+
+# VS Code Java plugin
+
+graphql.schema.json
+
+scale-api/bin/
+.classpath
+.project
+**/.settings/*
