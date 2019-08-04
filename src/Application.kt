@@ -2,7 +2,8 @@ package com.ktor
 
 import com.ktor.api.phrase
 import com.ktor.model.User
-import com.ktor.repository.RepositoryImpl
+import com.ktor.repository.DatabaseFactory
+import com.ktor.repository.EmojiPhrasesRepository
 import com.ktor.webapp.about
 import com.ktor.webapp.home
 import com.ktor.webapp.phrases
@@ -54,7 +55,9 @@ fun Application.module(testing: Boolean = false) {
 
     install(Locations)
 
-    val db = RepositoryImpl()
+    DatabaseFactory.init()
+
+    val db = EmojiPhrasesRepository()
 
     routing {
         static("/static") {
